@@ -1,0 +1,9 @@
+#ifndef NOSUCHITEMEXCEPTION_H
+#define NOSUCHITEMEXCEPTION_H
+
+
+class NoSuchItemException {
+
+};
+
+#endif //NOSUCHITEMEXCEPTION_H
