@@ -1,0 +1,78 @@
+                            | # NAME SURNAME ID
+                            | # BATUHAN AKÇAN 2580181
+                            | 
+0x000:                      | .pos 0x0
+0x000:                      | init:
+0x000: 30f4001f000000000000 |     irmovq stack, %rsp
+0x00a: 30f20600000000000000 |     irmovq $6, %rdx
+0x014: 30f70810000000000000 |     irmovq array_begin, %rdi
+0x01e: 30f64810000000000000 |     irmovq array_end, %rsi
+0x028: 803200000000000000   |     call binary_search
+0x031: 00                   |     halt
+                            | 
+                            | #implement your code below (DO NOT CHANGE/REMOVE THIS COMMENT)
+                            | 
+0x032:                      | binary_search:
+0x032: 30f0ffffffffffffffff |     irmovq $-1, %rax        # -1 -> rax
+0x03c: 207e                 |     rrmovq %rdi, %r14       # begin -> r14
+0x03e: 2069                 |     rrmovq %rsi, %r9        # end -> r9
+                            |     
+0x040:                      | loop_cond:
+0x040: 209b                 |     rrmovq %r9, %r11        # end -> r11
+0x042: 61eb                 |     subq %r14, %r11         # end-begin -> r11
+0x044: 765600000000000000   |     jg binary_search_loop   # end-begin > 0
+0x04d: 70cb00000000000000   |     jmp done
+                            |     
+0x056:                      | binary_search_loop:
+0x056: 30fa0000000000000000 |     irmovq $0, %r10      # initialize mid
+0x060: 30fd1000000000000000 |     irmovq $16, %r13     # 16 -> r13
+0x06a: 67db                 |     dvvq %r13, %r11      # (end-begin)/16 -> r11
+0x06c: 30fd0800000000000000 |     irmovq $8, %r13      # 8 -> r13
+0x076: 65db                 |     mllq %r13, %r11	 # (end-begin)/2 -> r11
+0x078: 60ea                 |     addq %r14, %r10      # mid += begin
+0x07a: 60ba                 |     addq %r11, %r10      # mid += (end-begin)/2
+0x07c: 50ca0000000000000000 |     mrmovq (%r10), %r12  # *mid -> r12
+0x086: 2023                 |     rrmovq %rdx, %rbx    # value -> rbx
+0x088: 61c3                 |     subq %r12, %rbx      # value - *mid
+0x08a: 73a700000000000000   |     je if
+0x093: 76b400000000000000   |     jg elseif
+0x09c:                      | else:
+0x09c: 20a9                 |     rrmovq %r10, %r9   # end = mid
+0x09e: 704000000000000000   |     jmp loop_cond
+                            |     
+0x0a7:                      | if:
+0x0a7: 20a0                 |     rrmovq %r10, %rax  # mid -> rax
+0x0a9: 6170                 |     subq %rdi, %rax    # mid-initial_begin -> rax
+0x0ab: 70cb00000000000000   |     jmp done
+                            | 
+0x0b4:                      | elseif:
+0x0b4: 20ae                 |     rrmovq %r10, %r14   # begin = mid
+0x0b6: 30fd0800000000000000 |     irmovq $8, %r13     # 1 byte -> r13
+0x0c0: 60de                 |     addq %r13, %r14     # begin = mid+1
+0x0c2: 704000000000000000   |     jmp loop_cond
+                            | 
+0x0cb:                      | done:
+0x0cb: 30fd0800000000000000 |     irmovq $8, %r13    # 8 -> r13
+0x0d5: 60d0                 |     addq %r13, %rax    # mid+8 -> rax
+0x0d7: 67d0                 |     dvvq %r13, %rax    # (mid+8)/8 -> rax
+0x0d9: 90                   |     ret
+                            | 
+                            | #implement your code above (DO NOT CHANGE/REMOVE THIS COMMENT)
+                            | 
+0x1008:                      | .pos 0x1008
+0x1008:                      | array_begin:
+0x1008:0100000000000000      |     .quad 1
+0x1010:0200000000000000      |     .quad 2
+0x1018:0300000000000000      |     .quad 3
+0x1020:0500000000000000      |     .quad 5
+0x1028:0600000000000000      |     .quad 6
+0x1030:0700000000000000      |     .quad 7
+0x1038:0900000000000000      |     .quad 9
+0x1040:0b00000000000000      |     .quad 11
+0x1048:                      | array_end:
+0x1048:0000000000000000      |     .quad 0
+0x1f00:                      | .pos 0x1F00
+0x1f00:                      | stack:
+0x1f00:0000000000000000      |     .quad 0
+                             | 
+                             | 

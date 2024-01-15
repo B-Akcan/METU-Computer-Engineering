@@ -1,0 +1,225 @@
+.pos 0x0
+	irmovq stack, %rsp
+    irmovq array_begin1, %rdi
+    irmovq array_begin2, %rsi
+    irmovq $32, %rdx
+    call switch8
+    halt
+
+binary_search:
+    irmovq $-1, %rax        # -1 -> rax
+    rrmovq %rdi, %r14       # begin -> r14
+    rrmovq %rsi, %r9        # end -> r9
+    
+loop_cond:
+    rrmovq %r9, %r11        # end -> r11
+    subq %r14, %r11         # end-begin -> r11
+    jg binary_search_loop   # end-begin > 0
+    jmp done1
+    
+binary_search_loop:
+    irmovq $0, %r10      # initialize mid
+    irmovq $16, %r13     # 16 -> r13
+    dvvq %r13, %r11      # (end-begin)/16 -> r11
+    irmovq $8, %r13      # 8 -> r13
+    mllq %r13, %r11	 # (end-begin)/2 -> r11
+    addq %r14, %r10      # mid += begin
+    addq %r11, %r10      # mid += (end-begin)/2
+    mrmovq (%r10), %r12  # *mid -> r12
+    rrmovq %rdx, %rbx    # value -> rbx
+    subq %r12, %rbx      # value - *mid
+    je if
+    jg elseif
+else:
+    rrmovq %r10, %r9   # end = mid
+    jmp loop_cond
+    
+if:
+    rrmovq %r10, %rax  # mid -> rax
+    subq %rdi, %rax    # mid-initial_begin -> rax
+    jmp done1
+
+elseif:
+    rrmovq %r10, %r14   # begin = mid
+    irmovq $8, %r13     # 1 byte -> r13
+    addq %r13, %r14     # begin = mid+1
+    jmp loop_cond
+
+done1:
+    irmovq $8, %r13    # 8 -> r13
+    addq %r13, %rax    # mid+8 -> rax
+    dvvq %r13, %rax    # (mid+8)/8 -> rax
+    ret
+
+begin_case_array:
+    .quad case0
+    .quad case1
+    .quad case2
+    .quad case3
+    .quad case4
+    .quad case5
+    .quad case6
+    .quad case7
+end_case_array:
+    .quad 0
+
+begin_num_array:
+    .quad 0
+    .quad 1
+    .quad 2
+    .quad 3
+    .quad 4
+    .quad 5
+    .quad 6
+    .quad 7
+end_num_array:
+    .quad 0
+
+switch8:
+    rrmovq %rdi, %r14			# store begin1 in r14
+    rrmovq %rsi, %r13			# store begin2 in r13
+    rrmovq %rdx, %rbp			# store length in rbp
+    
+loop:
+    andq %rbp, %rbp			# %rbp instead of %rdx
+    jle done
+    
+    mrmovq (%r14), %r8			# (%r14) instead of %rdi
+    mrmovq (%r14), %r11			# (%r14) instead of %rdi
+    irmovq $8, %r12
+    modq %r12, %r8
+    
+    # Store register values
+    pushq %r14
+    pushq %r13
+    pushq %rbp
+    pushq %r11
+    
+    # Call binary search in an array to find the switched value.
+    irmovq begin_num_array, %rdi	# move array begin to rdi
+    irmovq end_num_array, %rsi		# move array end to rsi
+    rrmovq %r8, %rdx			# move the switched value to rdx
+    call binary_search
+    
+    # Restore register values
+    popq %r11
+    popq %rbp
+    popq %r13
+    popq %r14
+    
+    # Jump to the correct case according to the return value of binary search.
+    irmovq $1, %rcx
+    subq %rcx, %rax
+    irmovq $8, %rcx
+    mllq %rcx, %rax
+    jtab begin_case_array, %rax	
+    
+    cases_over:
+    irmovq $16, %r10
+    addq %r10, %r11
+    rmmovq %r11, (%r13)			# (%r13) instead of (%rsi)
+    irmovq $1, %r10
+    subq %r10, %rbp			# %rbp instead of %rdx
+    irmovq $8, %r10
+    addq %r10, %r14			# %r14 instead of %rdi 
+    addq %r10, %r13			# %r13 instead of %rsi
+    jmp loop
+done:
+ret
+
+
+#0 -> add 1
+case0:
+irmovq $1, %r10
+addq %r10, %r11
+jmp cases_over
+
+#1 -> multiply by 5
+case1:
+irmovq $5, %r10
+mllq %r10, %r11
+jmp cases_over
+
+#2 -> divide by 2
+case2:
+irmovq $2, %r10
+dvvq %r10, %r11
+jmp cases_over
+
+#3 -> take mod 3
+case3:
+irmovq $3, %r10
+modq %r10, %r11
+jmp cases_over
+
+#4 -> subtract 7
+case4:
+irmovq $7, %r10
+subq %r10, %r11
+jmp cases_over
+
+#5 -> make it 331
+case5:
+irmovq $331, %r11
+jmp cases_over
+
+#6 -> add 10
+case6:
+irmovq $10, %r10
+addq %r10, %r11
+jmp cases_over
+
+#7 -> divide by 3
+case7:
+irmovq $3, %r10
+dvvq %r10, %r11
+jmp cases_over
+
+
+
+
+
+.pos 0x1000
+array_begin1:
+.quad 44
+.quad 39
+.quad 51
+.quad 56
+.quad 57
+.quad 43
+.quad 63
+.quad 40
+.quad 59
+.quad 50
+.quad 45
+.quad 42
+.quad 53
+.quad 62
+.quad 37
+.quad 58
+.quad 55
+.quad 41
+.quad 35
+.quad 38
+.quad 60
+.quad 49
+.quad 48
+.quad 47
+.quad 36
+.quad 61
+.quad 33
+.quad 46
+.quad 54
+.quad 52
+.quad 32
+.quad 34
+array_end1:
+.quad 0
+
+.pos 0x1500
+array_begin2:
+.quad 0
+.pos 0x1F00
+stack:
+.quad 0
+

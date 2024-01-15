@@ -1,0 +1,78 @@
+# NAME SURNAME ID
+# BATUHAN AKÇAN 2580181
+
+.pos 0x0
+init:
+    irmovq stack, %rsp
+    irmovq $6, %rdx
+    irmovq array_begin, %rdi
+    irmovq array_end, %rsi
+    call binary_search
+    halt
+
+#implement your code below (DO NOT CHANGE/REMOVE THIS COMMENT)
+
+binary_search:
+    irmovq $-1, %rax        # -1 -> rax
+    rrmovq %rdi, %r14       # begin -> r14
+    rrmovq %rsi, %r9        # end -> r9
+    
+loop_cond:
+    rrmovq %r9, %r11        # end -> r11
+    subq %r14, %r11         # end-begin -> r11
+    jg binary_search_loop   # end-begin > 0
+    jmp done
+    
+binary_search_loop:
+    irmovq $0, %r10      # initialize mid
+    irmovq $16, %r13     # 16 -> r13
+    dvvq %r13, %r11      # (end-begin)/16 -> r11
+    irmovq $8, %r13      # 8 -> r13
+    mllq %r13, %r11	 # (end-begin)/2 -> r11
+    addq %r14, %r10      # mid += begin
+    addq %r11, %r10      # mid += (end-begin)/2
+    mrmovq (%r10), %r12  # *mid -> r12
+    rrmovq %rdx, %rbx    # value -> rbx
+    subq %r12, %rbx      # value - *mid
+    je if
+    jg elseif
+else:
+    rrmovq %r10, %r9   # end = mid
+    jmp loop_cond
+    
+if:
+    rrmovq %r10, %rax  # mid -> rax
+    subq %rdi, %rax    # mid-initial_begin -> rax
+    jmp done
+
+elseif:
+    rrmovq %r10, %r14   # begin = mid
+    irmovq $8, %r13     # 1 byte -> r13
+    addq %r13, %r14     # begin = mid+1
+    jmp loop_cond
+
+done:
+    irmovq $8, %r13    # 8 -> r13
+    addq %r13, %rax    # mid+8 -> rax
+    dvvq %r13, %rax    # (mid+8)/8 -> rax
+    ret
+
+#implement your code above (DO NOT CHANGE/REMOVE THIS COMMENT)
+
+.pos 0x1008
+array_begin:
+    .quad 1
+    .quad 2
+    .quad 3
+    .quad 5
+    .quad 6
+    .quad 7
+    .quad 9
+    .quad 11
+array_end:
+    .quad 0
+.pos 0x1F00
+stack:
+    .quad 0
+
+

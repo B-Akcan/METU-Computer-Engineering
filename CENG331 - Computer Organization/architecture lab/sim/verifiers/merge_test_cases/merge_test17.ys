@@ -1,0 +1,108 @@
+.pos 0x0
+init:
+    irmovq stack, %rsp
+    irmovq array_begin1, %rdi
+    irmovq array_end1, %rsi
+    irmovq array_begin2, %rdx
+    irmovq array_end2, %rcx
+    irmovq array_begin3, %r8
+    call merge
+    halt
+
+
+merge:
+    rrmovq %rsi, %r9		# end1 -> r9
+    subq %rdi, %r9		# end1-begin1 -> r9
+    jle while3
+    rrmovq %rcx, %r10		# end2 -> r10
+    subq %rdx, %r10		# end2-begin2 -> r10
+    jle while2
+    mrmovq (%rdx), %r11		# *begin2 -> r11
+    mrmovq (%rdi), %r12		# *begin1 -> r12
+    subq %r12, %r11		# *begin2 - *begin1 -> r11
+    jle else			# if (*begin2 - *begin1 <= 0) jmp else  
+    mrmovq (%rdi), %r14		# *begin1 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdi		# begin1++
+    addq %r14, %r8		# begin3++
+    jmp merge
+
+else:
+    mrmovq (%rdx), %r14		# *begin2 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdx		# begin2++
+    addq %r14, %r8		# begin3++
+    jmp merge
+
+while2:
+    rrmovq %rsi, %r9		# end1 -> r9
+    subq %rdi, %r9		# end1-begin1 -> r9
+    jle out
+    mrmovq (%rdi), %r14		# *begin1 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdi		# begin1++
+    addq %r14, %r8		# begin3++
+    jmp while2
+
+while3:
+    rrmovq %rcx, %r10		# end2 -> r10
+    subq %rdx, %r10		# end2-begin2 -> r10
+    jle out
+    mrmovq (%rdx), %r14		# *begin2 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdx		# begin2++
+    addq %r14, %r8		# begin3++
+    jmp while3 
+
+out:
+    ret
+
+
+
+.pos 0x1008
+array_begin1:
+.quad 108
+.quad 114
+.quad 121
+.quad 125
+.quad 126
+.quad 143
+.quad 145
+.quad 149
+.quad 154
+.quad 176
+.quad 177
+.quad 181
+.quad 189
+.quad 197
+array_end1:
+.quad 0
+array_begin2:
+.quad 106
+.quad 116
+.quad 117
+.quad 123
+.quad 136
+.quad 140
+.quad 152
+.quad 161
+.quad 163
+.quad 166
+.quad 168
+.quad 169
+.quad 180
+.quad 199
+array_end2:
+.quad 0
+
+.pos 0x1300
+array_begin3:
+.quad 0
+.pos 0x1F00
+stack:
+.quad 0
+

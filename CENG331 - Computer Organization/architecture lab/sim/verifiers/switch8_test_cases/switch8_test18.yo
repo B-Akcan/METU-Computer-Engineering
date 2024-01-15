@@ -1,0 +1,257 @@
+0x000:                      | .pos 0x0
+0x000: 30f4001f000000000000 | 	irmovq stack, %rsp
+0x00a: 30f70010000000000000 |     irmovq array_begin1, %rdi
+0x014: 30f60015000000000000 |     irmovq array_begin2, %rsi
+0x01e: 30f24000000000000000 |     irmovq $64, %rdx
+0x028: 806a01000000000000   |     call switch8
+0x031: 00                   |     halt
+                            | 
+0x032:                      | binary_search:
+0x032: 30f0ffffffffffffffff |     irmovq $-1, %rax        # -1 -> rax
+0x03c: 207e                 |     rrmovq %rdi, %r14       # begin -> r14
+0x03e: 2069                 |     rrmovq %rsi, %r9        # end -> r9
+                            |     
+0x040:                      | loop_cond:
+0x040: 209b                 |     rrmovq %r9, %r11        # end -> r11
+0x042: 61eb                 |     subq %r14, %r11         # end-begin -> r11
+0x044: 765600000000000000   |     jg binary_search_loop   # end-begin > 0
+0x04d: 70cb00000000000000   |     jmp done1
+                            |     
+0x056:                      | binary_search_loop:
+0x056: 30fa0000000000000000 |     irmovq $0, %r10      # initialize mid
+0x060: 30fd1000000000000000 |     irmovq $16, %r13     # 16 -> r13
+0x06a: 67db                 |     dvvq %r13, %r11      # (end-begin)/16 -> r11
+0x06c: 30fd0800000000000000 |     irmovq $8, %r13      # 8 -> r13
+0x076: 65db                 |     mllq %r13, %r11	 # (end-begin)/2 -> r11
+0x078: 60ea                 |     addq %r14, %r10      # mid += begin
+0x07a: 60ba                 |     addq %r11, %r10      # mid += (end-begin)/2
+0x07c: 50ca0000000000000000 |     mrmovq (%r10), %r12  # *mid -> r12
+0x086: 2023                 |     rrmovq %rdx, %rbx    # value -> rbx
+0x088: 61c3                 |     subq %r12, %rbx      # value - *mid
+0x08a: 73a700000000000000   |     je if
+0x093: 76b400000000000000   |     jg elseif
+0x09c:                      | else:
+0x09c: 20a9                 |     rrmovq %r10, %r9   # end = mid
+0x09e: 704000000000000000   |     jmp loop_cond
+                            |     
+0x0a7:                      | if:
+0x0a7: 20a0                 |     rrmovq %r10, %rax  # mid -> rax
+0x0a9: 6170                 |     subq %rdi, %rax    # mid-initial_begin -> rax
+0x0ab: 70cb00000000000000   |     jmp done1
+                            | 
+0x0b4:                      | elseif:
+0x0b4: 20ae                 |     rrmovq %r10, %r14   # begin = mid
+0x0b6: 30fd0800000000000000 |     irmovq $8, %r13     # 1 byte -> r13
+0x0c0: 60de                 |     addq %r13, %r14     # begin = mid+1
+0x0c2: 704000000000000000   |     jmp loop_cond
+                            | 
+0x0cb:                      | done1:
+0x0cb: 30fd0800000000000000 |     irmovq $8, %r13    # 8 -> r13
+0x0d5: 60d0                 |     addq %r13, %rax    # mid+8 -> rax
+0x0d7: 67d0                 |     dvvq %r13, %rax    # (mid+8)/8 -> rax
+0x0d9: 90                   |     ret
+                            | 
+0x0da:                      | begin_case_array:
+0x0da: 2602000000000000     |     .quad case0
+0x0e2: 3b02000000000000     |     .quad case1
+0x0ea: 5002000000000000     |     .quad case2
+0x0f2: 6502000000000000     |     .quad case3
+0x0fa: 7a02000000000000     |     .quad case4
+0x102: 8f02000000000000     |     .quad case5
+0x10a: a202000000000000     |     .quad case6
+0x112: b702000000000000     |     .quad case7
+0x11a:                      | end_case_array:
+0x11a: 0000000000000000     |     .quad 0
+                            | 
+0x122:                      | begin_num_array:
+0x122: 0000000000000000     |     .quad 0
+0x12a: 0100000000000000     |     .quad 1
+0x132: 0200000000000000     |     .quad 2
+0x13a: 0300000000000000     |     .quad 3
+0x142: 0400000000000000     |     .quad 4
+0x14a: 0500000000000000     |     .quad 5
+0x152: 0600000000000000     |     .quad 6
+0x15a: 0700000000000000     |     .quad 7
+0x162:                      | end_num_array:
+0x162: 0000000000000000     |     .quad 0
+                            | 
+0x16a:                      | switch8:
+0x16a: 207e                 |     rrmovq %rdi, %r14			# store begin1 in r14
+0x16c: 206d                 |     rrmovq %rsi, %r13			# store begin2 in r13
+0x16e: 2025                 |     rrmovq %rdx, %rbp			# store length in rbp
+                            |     
+0x170:                      | loop:
+0x170: 6255                 |     andq %rbp, %rbp			# %rbp instead of %rdx
+0x172: 712502000000000000   |     jle done
+                            |     
+0x17b: 508e0000000000000000 |     mrmovq (%r14), %r8			# (%r14) instead of %rdi
+0x185: 50be0000000000000000 |     mrmovq (%r14), %r11			# (%r14) instead of %rdi
+0x18f: 30fc0800000000000000 |     irmovq $8, %r12
+0x199: 66c8                 |     modq %r12, %r8
+                            |     
+                            |     # Store register values
+0x19b: a0ef                 |     pushq %r14
+0x19d: a0df                 |     pushq %r13
+0x19f: a05f                 |     pushq %rbp
+0x1a1: a0bf                 |     pushq %r11
+                            |     
+                            |     # Call binary search in an array to find the switched value.
+0x1a3: 30f72201000000000000 |     irmovq begin_num_array, %rdi	# move array begin to rdi
+0x1ad: 30f66201000000000000 |     irmovq end_num_array, %rsi		# move array end to rsi
+0x1b7: 2082                 |     rrmovq %r8, %rdx			# move the switched value to rdx
+0x1b9: 803200000000000000   |     call binary_search
+                            |     
+                            |     # Restore register values
+0x1c2: b0bf                 |     popq %r11
+0x1c4: b05f                 |     popq %rbp
+0x1c6: b0df                 |     popq %r13
+0x1c8: b0ef                 |     popq %r14
+                            |     
+                            |     # Jump to the correct case according to the return value of binary search.
+0x1ca: 30f10100000000000000 |     irmovq $1, %rcx
+0x1d4: 6110                 |     subq %rcx, %rax
+0x1d6: 30f10800000000000000 |     irmovq $8, %rcx
+0x1e0: 6510                 |     mllq %rcx, %rax
+0x1e2: d0f0da00000000000000 |     jtab begin_case_array, %rax	
+                            |     
+0x1ec:                      |     cases_over:
+0x1ec: 30fa1000000000000000 |     irmovq $16, %r10
+0x1f6: 60ab                 |     addq %r10, %r11
+0x1f8: 40bd0000000000000000 |     rmmovq %r11, (%r13)			# (%r13) instead of (%rsi)
+0x202: 30fa0100000000000000 |     irmovq $1, %r10
+0x20c: 61a5                 |     subq %r10, %rbp			# %rbp instead of %rdx
+0x20e: 30fa0800000000000000 |     irmovq $8, %r10
+0x218: 60ae                 |     addq %r10, %r14			# %r14 instead of %rdi 
+0x21a: 60ad                 |     addq %r10, %r13			# %r13 instead of %rsi
+0x21c: 707001000000000000   |     jmp loop
+0x225:                      | done:
+0x225: 90                   | ret
+                            | 
+                            | 
+                            | #0 -> add 1
+0x226:                      | case0:
+0x226: 30fa0100000000000000 | irmovq $1, %r10
+0x230: 60ab                 | addq %r10, %r11
+0x232: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #1 -> multiply by 5
+0x23b:                      | case1:
+0x23b: 30fa0500000000000000 | irmovq $5, %r10
+0x245: 65ab                 | mllq %r10, %r11
+0x247: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #2 -> divide by 2
+0x250:                      | case2:
+0x250: 30fa0200000000000000 | irmovq $2, %r10
+0x25a: 67ab                 | dvvq %r10, %r11
+0x25c: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #3 -> take mod 3
+0x265:                      | case3:
+0x265: 30fa0300000000000000 | irmovq $3, %r10
+0x26f: 66ab                 | modq %r10, %r11
+0x271: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #4 -> subtract 7
+0x27a:                      | case4:
+0x27a: 30fa0700000000000000 | irmovq $7, %r10
+0x284: 61ab                 | subq %r10, %r11
+0x286: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #5 -> make it 331
+0x28f:                      | case5:
+0x28f: 30fb4b01000000000000 | irmovq $331, %r11
+0x299: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #6 -> add 10
+0x2a2:                      | case6:
+0x2a2: 30fa0a00000000000000 | irmovq $10, %r10
+0x2ac: 60ab                 | addq %r10, %r11
+0x2ae: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | #7 -> divide by 3
+0x2b7:                      | case7:
+0x2b7: 30fa0300000000000000 | irmovq $3, %r10
+0x2c1: 67ab                 | dvvq %r10, %r11
+0x2c3: 70ec01000000000000   | jmp cases_over
+                            | 
+                            | 
+                            | 
+                            | 
+                            | 
+0x1000:                      | .pos 0x1000
+0x1000:                      | array_begin1:
+0x1000:3600000000000000      | .quad 54
+0x1008:3c00000000000000      | .quad 60
+0x1010:5a00000000000000      | .quad 90
+0x1018:5300000000000000      | .quad 83
+0x1020:5c00000000000000      | .quad 92
+0x1028:5800000000000000      | .quad 88
+0x1030:2d00000000000000      | .quad 45
+0x1038:5400000000000000      | .quad 84
+0x1040:5000000000000000      | .quad 80
+0x1048:2e00000000000000      | .quad 46
+0x1050:4c00000000000000      | .quad 76
+0x1058:2c00000000000000      | .quad 44
+0x1060:5100000000000000      | .quad 81
+0x1068:3500000000000000      | .quad 53
+0x1070:3200000000000000      | .quad 50
+0x1078:4600000000000000      | .quad 70
+0x1080:3e00000000000000      | .quad 62
+0x1088:4f00000000000000      | .quad 79
+0x1090:2000000000000000      | .quad 32
+0x1098:2800000000000000      | .quad 40
+0x10a0:2a00000000000000      | .quad 42
+0x10a8:5600000000000000      | .quad 86
+0x10b0:5b00000000000000      | .quad 91
+0x10b8:5500000000000000      | .quad 85
+0x10c0:4200000000000000      | .quad 66
+0x10c8:3800000000000000      | .quad 56
+0x10d0:4100000000000000      | .quad 65
+0x10d8:4500000000000000      | .quad 69
+0x10e0:1d00000000000000      | .quad 29
+0x10e8:2900000000000000      | .quad 41
+0x10f0:4800000000000000      | .quad 72
+0x10f8:1f00000000000000      | .quad 31
+0x1100:4b00000000000000      | .quad 75
+0x1108:5200000000000000      | .quad 82
+0x1110:3d00000000000000      | .quad 61
+0x1118:2200000000000000      | .quad 34
+0x1120:2600000000000000      | .quad 38
+0x1128:3300000000000000      | .quad 51
+0x1130:4a00000000000000      | .quad 74
+0x1138:2f00000000000000      | .quad 47
+0x1140:2300000000000000      | .quad 35
+0x1148:3000000000000000      | .quad 48
+0x1150:4400000000000000      | .quad 68
+0x1158:4900000000000000      | .quad 73
+0x1160:5900000000000000      | .quad 89
+0x1168:4300000000000000      | .quad 67
+0x1170:2400000000000000      | .quad 36
+0x1178:4700000000000000      | .quad 71
+0x1180:3900000000000000      | .quad 57
+0x1188:3400000000000000      | .quad 52
+0x1190:4e00000000000000      | .quad 78
+0x1198:3a00000000000000      | .quad 58
+0x11a0:2b00000000000000      | .quad 43
+0x11a8:2500000000000000      | .quad 37
+0x11b0:5700000000000000      | .quad 87
+0x11b8:1e00000000000000      | .quad 30
+0x11c0:2700000000000000      | .quad 39
+0x11c8:4d00000000000000      | .quad 77
+0x11d0:3f00000000000000      | .quad 63
+0x11d8:4000000000000000      | .quad 64
+0x11e0:2100000000000000      | .quad 33
+0x11e8:3100000000000000      | .quad 49
+0x11f0:3700000000000000      | .quad 55
+0x11f8:3b00000000000000      | .quad 59
+0x1200:                      | array_end1:
+0x1200:0000000000000000      | .quad 0
+                             | 
+0x1500:                      | .pos 0x1500
+0x1500:                      | array_begin2:
+0x1500:0000000000000000      | .quad 0
+0x1f00:                      | .pos 0x1F00
+0x1f00:                      | stack:
+0x1f00:0000000000000000      | .quad 0
+                             | 

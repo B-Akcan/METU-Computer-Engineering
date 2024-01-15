@@ -1,0 +1,99 @@
+                            | # NAME SURNAME ID
+                            | # BATUHAN AKÇAN 2580181
+                            | 
+0x000:                      | .pos 0x0
+0x000:                      | init:
+0x000: 30f4001f000000000000 |     irmovq stack, %rsp
+0x00a: 30f20600000000000000 |     irmovq $6, %rdx
+0x014: 30f70810000000000000 |     irmovq array_begin, %rdi
+0x01e: 30f64810000000000000 |     irmovq array_end, %rsi
+0x028: 803200000000000000   |     call binary_search
+0x031: 00                   |     halt
+                            | 
+                            | #implement your code below (DO NOT CHANGE/REMOVE THIS COMMENT)
+                            | 
+0x032:                      | binary_search:
+0x032: 207d                 |     rrmovq %rdi, %r13		# begin -> r13
+0x034: 206e                 |     rrmovq %rsi, %r14		# end -> r14
+0x036: 20eb                 |     rrmovq %r14, %r11		# end -> r11
+0x038: 61db                 |     subq %r13, %r11		# end-begin -> r11
+0x03a: 30fa1000000000000000 |     irmovq $16, %r10		# 16 -> r10
+0x044: 67ab                 |     dvvq %r10, %r11		# (end-begin)/16 -> r11
+0x046: 30fa0800000000000000 |     irmovq $8, %r10		# 8 -> r10
+0x050: 65ab                 |     mllq %r10, %r11		# (end-begin)/2 -> r11
+0x052: 30fc0000000000000000 |     irmovq $0, %r12		# initialize mid
+0x05c: 60dc                 |     addq %r13, %r12		# mid = begin
+0x05e: 60bc                 |     addq %r11, %r12		# mid = begin + (end-begin)/2
+0x060: 20ea                 |     rrmovq %r14, %r10		# end -> r10
+0x062: 61da                 |     subq %r13, %r10		# end-begin -> r10
+0x064: 711401000000000000   |     jle done			# if (begin-end >= 0) jmp done
+0x06d: 50ac0000000000000000 |     mrmovq (%r12), %r10		# *mid -> r10
+0x077: 612a                 |     subq %rdx, %r10		# *mid-value -> r10
+0x079: 739f00000000000000   |     je elif1			# if (*mid-value == 0) jmp elif1
+0x082: 72bc00000000000000   |     jl elif2			# if (*mid-value < 0) jmp elif2
+0x08b: 20c6                 |     rrmovq %r12, %rsi		# mid -> rsi
+0x08d: a0cf                 |     pushq %r12			# store mid
+0x08f: a0ef                 |     pushq %r14			# store end
+0x091: 803200000000000000   |     call binary_search
+0x09a: b0ef                 |     popq %r14			# retrieve end
+0x09c: b0cf                 |     popq %r12			# retrieve mid
+0x09e: 90                   |     ret
+                            | 
+0x09f:                      | elif1:
+0x09f: 20c0                 |     rrmovq %r12, %rax		# mid -> rax
+0x0a1: 61d0                 |     subq %r13, %rax		# mid-begin -> rax
+0x0a3: 30fa0800000000000000 |     irmovq $8, %r10		# 8 -> r10
+0x0ad: 67a0                 |     dvvq %r10, %rax		# (mid-begin)/8 -> rax
+0x0af: 30fa0100000000000000 |     irmovq $1, %r10		# 1 -> r10
+0x0b9: 60a0                 |     addq %r10, %rax		# (mid-begin)/8 + 1 -> rax
+0x0bb: 90                   |     ret
+                            | 
+0x0bc:                      | elif2:
+0x0bc: 20c7                 |     rrmovq %r12, %rdi		# mid -> rdi
+0x0be: 30fa0800000000000000 |     irmovq $8, %r10		# 8 -> r10
+0x0c8: 60a7                 |     addq %r10, %rdi		# mid+8 -> rdi
+0x0ca: a0df                 |     pushq %r13			# store begin
+0x0cc: a0cf                 |     pushq %r12			# store mid
+0x0ce: 803200000000000000   |     call binary_search
+0x0d7: b0cf                 |     popq %r12			# retrieve mid
+0x0d9: b0df                 |     popq %r13			# retrieve begin
+0x0db: 2009                 |     rrmovq %rax, %r9		# tmp -> r9
+0x0dd: 30fa0000000000000000 |     irmovq $0, %r10		# 0 -> r10
+0x0e7: 61a9                 |     subq %r10, %r9		# tmp-0 -> r9
+0x0e9: 731101000000000000   |     je elif2else		# if (tmp-0 == 0) jmp elif2else
+0x0f2: 20c0                 |     rrmovq %r12, %rax		# mid -> rax
+0x0f4: 61d0                 |     subq %r13, %rax		# mid-begin -> rax
+0x0f6: 30fa0800000000000000 |     irmovq $8, %r10		# 8 -> r10
+0x100: 67a0                 |     dvvq %r10, %rax		# (mid-begin)/8 -> rax
+0x102: 6090                 |     addq %r9, %rax		# tmp + (mid-begin)/8 -> rax
+0x104: 30fa0100000000000000 |     irmovq $1, %r10		# 1 -> r10
+0x10e: 60a0                 |     addq %r10, %rax		# tmp + (mid-begin)/8 + 1 -> rax
+0x110: 90                   |     ret
+                            |     
+0x111:                      | elif2else:
+0x111: 2090                 |     rrmovq %r9, %rax		# tmp -> rax
+0x113: 90                   |     ret
+                            | 
+0x114:                      | done:
+0x114: 30f00000000000000000 |     irmovq $0, %rax		# 0 -> rax
+0x11e: 90                   |     ret
+                            | 
+                            | #implement your code above (DO NOT CHANGE/REMOVE THIS COMMENT)
+                            | 
+0x1008:                      | .pos 0x1008
+0x1008:                      | array_begin:
+0x1008:0100000000000000      |     .quad 1
+0x1010:0200000000000000      |     .quad 2
+0x1018:0300000000000000      |     .quad 3
+0x1020:0500000000000000      |     .quad 5
+0x1028:0600000000000000      |     .quad 6
+0x1030:0700000000000000      |     .quad 7
+0x1038:0900000000000000      |     .quad 9
+0x1040:0b00000000000000      |     .quad 11
+0x1048:                      | array_end:
+0x1048:0000000000000000      |     .quad 0
+0x1f00:                      | .pos 0x1F00
+0x1f00:                      | stack:
+0x1f00:0000000000000000      |     .quad 0
+                             | 
+                             | 

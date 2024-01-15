@@ -1,0 +1,86 @@
+.pos 0x0
+irmovq stack, %rsp
+irmovq $30, %rdx #queried value
+irmovq array_begin, %rdi
+irmovq array_end, %rsi
+call binary_search
+halt
+
+
+binary_search:
+    rrmovq %rdi, %r13		# begin -> r13
+    rrmovq %rsi, %r14		# end -> r14
+    rrmovq %r14, %r11		# end -> r11
+    subq %r13, %r11		# end-begin -> r11
+    irmovq $16, %r10		# 16 -> r10
+    dvvq %r10, %r11		# (end-begin)/16 -> r11
+    irmovq $8, %r10		# 8 -> r10
+    mllq %r10, %r11		# (end-begin)/2 -> r11
+    irmovq $0, %r12		# initialize mid
+    addq %r13, %r12		# mid = begin
+    addq %r11, %r12		# mid = begin + (end-begin)/2
+    rrmovq %r14, %r10		# end -> r10
+    subq %r13, %r10		# end-begin -> r10
+    jle done			# if (begin-end >= 0) jmp done
+    mrmovq (%r12), %r10		# *mid -> r10
+    subq %rdx, %r10		# *mid-value -> r10
+    je elif1			# if (*mid-value == 0) jmp elif1
+    jl elif2			# if (*mid-value < 0) jmp elif2
+    rrmovq %r12, %rsi		# mid -> rsi
+    pushq %r12			# store mid
+    pushq %r14			# store end
+    call binary_search
+    popq %r14			# retrieve end
+    popq %r12			# retrieve mid
+    ret
+
+elif1:
+    rrmovq %r12, %rax		# mid -> rax
+    subq %r13, %rax		# mid-begin -> rax
+    irmovq $8, %r10		# 8 -> r10
+    dvvq %r10, %rax		# (mid-begin)/8 -> rax
+    irmovq $1, %r10		# 1 -> r10
+    addq %r10, %rax		# (mid-begin)/8 + 1 -> rax
+    ret
+
+elif2:
+    rrmovq %r12, %rdi		# mid -> rdi
+    irmovq $8, %r10		# 8 -> r10
+    addq %r10, %rdi		# mid+8 -> rdi
+    pushq %r13			# store begin
+    pushq %r12			# store mid
+    call binary_search
+    popq %r12			# retrieve mid
+    popq %r13			# retrieve begin
+    rrmovq %rax, %r9		# tmp -> r9
+    irmovq $0, %r10		# 0 -> r10
+    subq %r10, %r9		# tmp-0 -> r9
+    je elif2else		# if (tmp-0 == 0) jmp elif2else
+    rrmovq %r12, %rax		# mid -> rax
+    subq %r13, %rax		# mid-begin -> rax
+    irmovq $8, %r10		# 8 -> r10
+    dvvq %r10, %rax		# (mid-begin)/8 -> rax
+    addq %r9, %rax		# tmp + (mid-begin)/8 -> rax
+    irmovq $1, %r10		# 1 -> r10
+    addq %r10, %rax		# tmp + (mid-begin)/8 + 1 -> rax
+    ret
+    
+elif2else:
+    rrmovq %r9, %rax		# tmp -> rax
+    ret
+
+done:
+    irmovq $0, %rax		# 0 -> rax
+    ret
+
+
+
+.pos 0x1008
+array_begin:
+.quad 40
+array_end:
+.quad 0
+.pos 0x1F00
+stack:
+.quad 0
+

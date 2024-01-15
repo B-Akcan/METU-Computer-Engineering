@@ -1,0 +1,104 @@
+.pos 0x0
+init:
+    irmovq stack, %rsp
+    irmovq array_begin1, %rdi
+    irmovq array_end1, %rsi
+    irmovq array_begin2, %rdx
+    irmovq array_end2, %rcx
+    irmovq array_begin3, %r8
+    call merge
+    halt
+
+
+merge:
+    rrmovq %rsi, %r9		# end1 -> r9
+    subq %rdi, %r9		# end1-begin1 -> r9
+    jle while3
+    rrmovq %rcx, %r10		# end2 -> r10
+    subq %rdx, %r10		# end2-begin2 -> r10
+    jle while2
+    mrmovq (%rdx), %r11		# *begin2 -> r11
+    mrmovq (%rdi), %r12		# *begin1 -> r12
+    subq %r12, %r11		# *begin2 - *begin1 -> r11
+    jle else			# if (*begin2 - *begin1 <= 0) jmp else  
+    mrmovq (%rdi), %r14		# *begin1 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdi		# begin1++
+    addq %r14, %r8		# begin3++
+    jmp merge
+
+else:
+    mrmovq (%rdx), %r14		# *begin2 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdx		# begin2++
+    addq %r14, %r8		# begin3++
+    jmp merge
+
+while2:
+    rrmovq %rsi, %r9		# end1 -> r9
+    subq %rdi, %r9		# end1-begin1 -> r9
+    jle out
+    mrmovq (%rdi), %r14		# *begin1 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdi		# begin1++
+    addq %r14, %r8		# begin3++
+    jmp while2
+
+while3:
+    rrmovq %rcx, %r10		# end2 -> r10
+    subq %rdx, %r10		# end2-begin2 -> r10
+    jle out
+    mrmovq (%rdx), %r14		# *begin2 -> r14
+    rmmovq %r14, (%r8)		# r14 -> *begin3
+    irmovq $8, %r14		# 1 byte -> r14
+    addq %r14, %rdx		# begin2++
+    addq %r14, %r8		# begin3++
+    jmp while3 
+
+out:
+    ret
+
+
+
+.pos 0x1008
+array_begin1:
+.quad 103
+.quad 112
+.quad 116
+.quad 122
+.quad 142
+.quad 152
+.quad 160
+.quad 161
+.quad 173
+.quad 179
+.quad 190
+.quad 198
+array_end1:
+.quad 0
+array_begin2:
+.quad 102
+.quad 111
+.quad 114
+.quad 118
+.quad 130
+.quad 146
+.quad 149
+.quad 164
+.quad 174
+.quad 177
+.quad 191
+.quad 197
+array_end2:
+.quad 0
+
+.pos 0x1300
+array_begin3:
+.quad 0
+.pos 0x1F00
+stack:
+.quad 0
+

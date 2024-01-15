@@ -1,0 +1,104 @@
+0x000:                      | .pos 0x0
+0x000:                      | init:
+0x000: 30f4001f000000000000 |     irmovq stack, %rsp
+0x00a: 30f70810000000000000 |     irmovq array_begin1, %rdi
+0x014: 30f66810000000000000 |     irmovq array_end1, %rsi
+0x01e: 30f27010000000000000 |     irmovq array_begin2, %rdx
+0x028: 30f1d010000000000000 |     irmovq array_end2, %rcx
+0x032: 30f80013000000000000 |     irmovq array_begin3, %r8
+0x03c: 804600000000000000   |     call merge
+0x045: 00                   |     halt
+                            | 
+                            | 
+0x046:                      | merge:
+0x046: 2069                 |     rrmovq %rsi, %r9		# end1 -> r9
+0x048: 6179                 |     subq %rdi, %r9		# end1-begin1 -> r9
+0x04a: 710d01000000000000   |     jle while3
+0x053: 201a                 |     rrmovq %rcx, %r10		# end2 -> r10
+0x055: 612a                 |     subq %rdx, %r10		# end2-begin2 -> r10
+0x057: 71d500000000000000   |     jle while2
+0x060: 50b20000000000000000 |     mrmovq (%rdx), %r11		# *begin2 -> r11
+0x06a: 50c70000000000000000 |     mrmovq (%rdi), %r12		# *begin1 -> r12
+0x074: 61cb                 |     subq %r12, %r11		# *begin2 - *begin1 -> r11
+0x076: 71aa00000000000000   |     jle else			# if (*begin2 - *begin1 <= 0) jmp else  
+0x07f: 50e70000000000000000 |     mrmovq (%rdi), %r14		# *begin1 -> r14
+0x089: 40e80000000000000000 |     rmmovq %r14, (%r8)		# r14 -> *begin3
+0x093: 30fe0800000000000000 |     irmovq $8, %r14		# 1 byte -> r14
+0x09d: 60e7                 |     addq %r14, %rdi		# begin1++
+0x09f: 60e8                 |     addq %r14, %r8		# begin3++
+0x0a1: 704600000000000000   |     jmp merge
+                            | 
+0x0aa:                      | else:
+0x0aa: 50e20000000000000000 |     mrmovq (%rdx), %r14		# *begin2 -> r14
+0x0b4: 40e80000000000000000 |     rmmovq %r14, (%r8)		# r14 -> *begin3
+0x0be: 30fe0800000000000000 |     irmovq $8, %r14		# 1 byte -> r14
+0x0c8: 60e2                 |     addq %r14, %rdx		# begin2++
+0x0ca: 60e8                 |     addq %r14, %r8		# begin3++
+0x0cc: 704600000000000000   |     jmp merge
+                            | 
+0x0d5:                      | while2:
+0x0d5: 2069                 |     rrmovq %rsi, %r9		# end1 -> r9
+0x0d7: 6179                 |     subq %rdi, %r9		# end1-begin1 -> r9
+0x0d9: 714501000000000000   |     jle out
+0x0e2: 50e70000000000000000 |     mrmovq (%rdi), %r14		# *begin1 -> r14
+0x0ec: 40e80000000000000000 |     rmmovq %r14, (%r8)		# r14 -> *begin3
+0x0f6: 30fe0800000000000000 |     irmovq $8, %r14		# 1 byte -> r14
+0x100: 60e7                 |     addq %r14, %rdi		# begin1++
+0x102: 60e8                 |     addq %r14, %r8		# begin3++
+0x104: 70d500000000000000   |     jmp while2
+                            | 
+0x10d:                      | while3:
+0x10d: 201a                 |     rrmovq %rcx, %r10		# end2 -> r10
+0x10f: 612a                 |     subq %rdx, %r10		# end2-begin2 -> r10
+0x111: 714501000000000000   |     jle out
+0x11a: 50e20000000000000000 |     mrmovq (%rdx), %r14		# *begin2 -> r14
+0x124: 40e80000000000000000 |     rmmovq %r14, (%r8)		# r14 -> *begin3
+0x12e: 30fe0800000000000000 |     irmovq $8, %r14		# 1 byte -> r14
+0x138: 60e2                 |     addq %r14, %rdx		# begin2++
+0x13a: 60e8                 |     addq %r14, %r8		# begin3++
+0x13c: 700d01000000000000   |     jmp while3 
+                            | 
+0x145:                      | out:
+0x145: 90                   |     ret
+                            | 
+                            | 
+                            | 
+0x1008:                      | .pos 0x1008
+0x1008:                      | array_begin1:
+0x1008:6f00000000000000      | .quad 111
+0x1010:8600000000000000      | .quad 134
+0x1018:8d00000000000000      | .quad 141
+0x1020:8e00000000000000      | .quad 142
+0x1028:9400000000000000      | .quad 148
+0x1030:9800000000000000      | .quad 152
+0x1038:9b00000000000000      | .quad 155
+0x1040:9c00000000000000      | .quad 156
+0x1048:a600000000000000      | .quad 166
+0x1050:b200000000000000      | .quad 178
+0x1058:b500000000000000      | .quad 181
+0x1060:c500000000000000      | .quad 197
+0x1068:                      | array_end1:
+0x1068:0000000000000000      | .quad 0
+0x1070:                      | array_begin2:
+0x1070:7500000000000000      | .quad 117
+0x1078:7600000000000000      | .quad 118
+0x1080:7900000000000000      | .quad 121
+0x1088:8200000000000000      | .quad 130
+0x1090:8400000000000000      | .quad 132
+0x1098:8b00000000000000      | .quad 139
+0x10a0:9000000000000000      | .quad 144
+0x10a8:9900000000000000      | .quad 153
+0x10b0:9f00000000000000      | .quad 159
+0x10b8:b000000000000000      | .quad 176
+0x10c0:be00000000000000      | .quad 190
+0x10c8:c700000000000000      | .quad 199
+0x10d0:                      | array_end2:
+0x10d0:0000000000000000      | .quad 0
+                             | 
+0x1300:                      | .pos 0x1300
+0x1300:                      | array_begin3:
+0x1300:0000000000000000      | .quad 0
+0x1f00:                      | .pos 0x1F00
+0x1f00:                      | stack:
+0x1f00:0000000000000000      | .quad 0
+                             | 

@@ -1,0 +1,28 @@
+0x000:                      | .pos 0
+0x000:                      | start:
+0x000: 30f81800000000000000 | irmovq $24, %r8
+0x00a: d0f84800000000000000 | jtab table, %r8
+                            | 
+0x014:                      | bra1:
+0x014: 30f90100000000000000 | irmovq $1, %r9
+0x01e: 00                   | halt
+0x01f:                      | bra2:
+0x01f: 30f90500000000000000 | irmovq $5, %r9
+0x029: 00                   | halt
+0x02a:                      | bra3:
+0x02a: 30f90700000000000000 | irmovq $7, %r9
+0x034: 00                   | halt
+0x035:                      | bra4:
+0x035: 30f90900000000000000 | irmovq $9, %r9
+0x03f: 00                   | halt
+                            | 
+0x040:                      | invalidinstr:
+0x040: ff00000000000000     | .quad 0xFF
+                            | 
+0x048:                      | table:
+0x048: 1400000000000000     | .quad bra1
+0x050: 1f00000000000000     | .quad bra2
+0x058: 2a00000000000000     | .quad bra3
+0x060: 4000000000000000     | .quad invalidinstr
+                            | 
+                            | 
