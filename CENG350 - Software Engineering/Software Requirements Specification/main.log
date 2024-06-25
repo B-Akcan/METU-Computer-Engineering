@@ -1,0 +1,1146 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.24)  6 MAY 2024 21:37
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/batuh/Documents/Dersler/CENG350 - software/SRS/CENG350 SRS/main.tex"
+(c:/Users/batuh/Documents/Dersler/CENG350 - software/SRS/CENG350 SRS/main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+(C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (PackagesAndSettings.tex (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks18
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen149
+\ar@mcellbox=\box51
+\extrarowheight=\dimen150
+\NC@list=\toks19
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box52
+)
+\TX@col@width=\dimen151
+\TX@old@table=\dimen152
+\TX@old@col=\dimen153
+\TX@target=\dimen154
+\TX@delta=\dimen155
+\TX@cols=\count266
+\TX@ftn=\toks20
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/tabularray\tabularray.sty (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-03-14 L3 programming layer (loader) 
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count267
+\l__pdf_internal_box=\box53
+))
+Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
+\l__tblr_a_int=\count268
+\l__tblr_c_int=\count269
+\l__tblr_r_int=\count270
+\l__tblr_d_dim=\dimen156
+\l__tblr_h_dim=\dimen157
+\l__tblr_o_dim=\dimen158
+\l__tblr_p_dim=\dimen159
+\l__tblr_q_dim=\dimen160
+\l__tblr_r_dim=\dimen161
+\l__tblr_s_dim=\dimen162
+\l__tblr_t_dim=\dimen163
+\l__tblr_v_dim=\dimen164
+\l__tblr_w_dim=\dimen165
+\l__tblr_a_box=\box54
+\l__tblr_b_box=\box55
+\l__tblr_c_box=\box56
+\l__tblr_d_box=\box57
+\g__tblr_table_count_int=\count271
+\c@rownum=\count272
+\c@colnum=\count273
+\c@rowcount=\count274
+\c@colcount=\count275
+\abovesep=\dimen166
+\belowsep=\dimen167
+\leftsep=\dimen168
+\rightsep=\dimen169
+\g_tblr_level_int=\count276
+\g__tblr_data_row_key_count_int=\count277
+\g__tblr_data_column_key_count_int=\count278
+\g__tblr_data_cell_key_count_int=\count279
+\g__tblr_array_int=\count280
+\l__tblr_key_count_int=\count281
+\l__tblr_key_quotient_int=\count282
+\l__tblr_key_quotient_two_int=\count283
+\l__tblr_key_remainder_int=\count284
+\g__tblr_data_str_value_count_int=\count285
+\rulewidth=\dimen170
+\l__tblr_strut_dp_dim=\dimen171
+\l__tblr_strut_ht_dim=\dimen172
+\g__tblr_cell_wd_dim=\dimen173
+\g__tblr_cell_ht_dim=\dimen174
+\g__tblr_cell_head_dim=\dimen175
+\g__tblr_cell_foot_dim=\dimen176
+\l__column_target_dim=\dimen177
+\l__tblr_caption_box=\box58
+\l__tblr_caption_left_box=\box59
+\l__tblr_row_head_box=\box60
+\l__tblr_row_foot_box=\box61
+\l__tblr_row_head_foot_dim=\dimen178
+\tablewidth=\dimen179
+\l__tblr_table_firsthead_box=\box62
+\l__tblr_table_middlehead_box=\box63
+\l__tblr_table_lasthead_box=\box64
+\l__tblr_table_firstfoot_box=\box65
+\l__tblr_table_middlefoot_box=\box66
+\l__tblr_table_lastfoot_box=\box67
+\l__tblr_remain_height_dim=\dimen180
+\l__tblr_long_from_int=\count286
+\l__tblr_long_to_int=\count287
+\l__tblr_curr_i_int=\count288
+\l__tblr_prev_i_int=\count289
+\l__tblr_table_page_int=\count290
+\l__tblr_table_head_box=\box68
+\l__tblr_table_foot_box=\box69
+\l__tblr_table_head_foot_dim=\dimen181
+\l__tblr_table_head_body_foot_dim=\dimen182
+\l__tblr_table_box=\box70
+\l__tblr_table_hlines_box=\box71
+\l__tblr_hline_box=\box72
+\l__tblr_row_box=\box73
+\l__tblr_col_o_wd_dim=\dimen183
+\l__tblr_col_b_wd_dim=\dimen184
+\l__tblr_hline_leftskip_dim=\dimen185
+\l__tblr_hline_rightskip_dim=\dimen186
+\l__tblr_row_ht_dim=\dimen187
+\l__tblr_row_dp_dim=\dimen188
+\l__tblr_row_abovesep_dim=\dimen189
+\l__tblr_row_belowsep_dim=\dimen190
+\l__tblr_row_vlines_box=\box74
+\l__tblr_vline_box=\box75
+\l__tblr_cell_box=\box76
+\l__row_upper_dim=\dimen191
+\l__row_lower_dim=\dimen192
+\l__row_vpace_dim=\dimen193
+\l__tblr_vline_aboveskip_dim=\dimen194
+\l__tblr_vline_belowskip_dim=\dimen195
+\l__tblr_cell_wd_dim=\dimen196
+\l__tblr_cell_ht_dim=\dimen197
+\l__tblr_diag_box=\box77
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/tools\xr.sty
+Package: xr 2023-07-04 v5.06 eXternal References (DPC)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count291
+\U@D=\dimen198
+\l@unhyphenated=\language79
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count292
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+)) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen199
+\Gin@req@width=\dimen256
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip61
+\thanksmargin=\skip62
+\droptitle=\skip63
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count293
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count294
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcprefix.sty
+Package: fcprefix 2012/09/28
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count295
+)) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen257
+)
+\c@padzeroesN=\count296
+\fc@tmpcatcode=\count297
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/fmtcount\fc-english.def
+File: fc-english.def 2016/01/12
+)
+\@DT@modctr=\count298
+\@ordinalctr=\count299
+\@orgargctr=\count300
+\@strctr=\count301
+\@tmpstrctr=\count302
+\@DT@loopN=\count303
+\@DT@X=\count304
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/datetime\datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count305
+\@month=\count306
+\@year=\count307
+\c@HOUR=\count308
+\c@HOURXII=\count309
+\c@MINUTE=\count310
+\c@TOHOUR=\count311
+\c@TOMINUTE=\count312
+\c@SECOND=\count313
+\currenthour=\count314
+\currentminute=\count315
+\currentsecond=\count316
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count317
+\dayofyear=\count318
+\dayofweek=\count319
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks26
+\dt@b=\toks27
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count320
+)
+\@linkdim=\dimen258
+\Hy@linkcounter=\count321
+\Hy@pagecounter=\count322
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count323
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count324
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen259
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count325
+\Field@Width=\dimen260
+\Fld@charsize=\dimen261
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count326
+\c@Item=\count327
+\c@Hfootnote=\count328
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count329
+\c@bookmark@seq@number=\count330
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip64
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box78
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen262
+\ttl@minus=\dimen263
+\ttl@toksa=\toks28
+\titlewidth=\dimen264
+\titlewidthlast=\dimen265
+\titlewidthfirst=\dimen266
+)) (main.aux (Sections/TitlePage.aux) (Sections/Revision.aux) (Sections/Introduction.aux) (Sections/SpecificRequirements.aux) (Sections/Suggestions.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 443.57848pt, 99.58464pt)
+* v-part:(T,H,B)=(56.9055pt, 642.66711pt, 95.39737pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=642.66711pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-52.36449pt
+* \headheight=27.05003pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count331
+\scratchdimen=\dimen267
+\scratchbox=\box79
+\nofMPsegments=\count332
+\nofMParguments=\count333
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen268
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
+\everyMPtoPDFconversion=\toks30
+) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (C:\Users\batuh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
+Package hyperref Info: Link coloring ON on input line 4.
+ (main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+\openout2 = `Sections/TitlePage.aux'.
+
+ (Sections/TitlePage.tex
+<Figures/metu_logo.png, id=139, 280.8894pt x 170.7981pt>
+File: Figures/metu_logo.png Graphic file (type png)
+<use Figures/metu_logo.png>
+Package pdftex.def Info: Figures/metu_logo.png  used on input line 4.
+(pdftex.def)             Requested size: 354.86412pt x 215.7879pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+ [1
+
+
+{C:/Users/batuh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/metu_logo.png>]) (main.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ...umberline {3.2}Functions}{25}{section.3.2}
+                                                  % [1
+
+
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [2] (main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [3
+
+] (main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+ [4
+
+]
+\openout2 = `Sections/Revision.aux'.
+
+ (Sections/Revision.tex
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+) [5
+
+
+
+]
+\openout2 = `Sections/Introduction.aux'.
+
+ (Sections/Introduction.tex
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+[1
+
+
+
+
+] [2] [3]
+<Figures/context_diagram.jpg, id=304, 1306.8825pt x 845.1575pt>
+File: Figures/context_diagram.jpg Graphic file (type jpg)
+<use Figures/context_diagram.jpg>
+Package pdftex.def Info: Figures/context_diagram.jpg  used on input line 29.
+(pdftex.def)             Requested size: 443.57848pt x 286.8597pt.
+<Figures/dss.png, id=306, 794.2172pt x 519.44063pt>
+File: Figures/dss.png Graphic file (type png)
+<use Figures/dss.png>
+Package pdftex.def Info: Figures/dss.png  used on input line 40.
+(pdftex.def)             Requested size: 443.57848pt x 290.11594pt.
+ [4 <./Figures/context_diagram.jpg>] [5 <./Figures/dss.png>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+<Figures/register_login_tab.png, id=321, 1405.50093pt x 705.38531pt>
+File: Figures/register_login_tab.png Graphic file (type png)
+<use Figures/register_login_tab.png>
+Package pdftex.def Info: Figures/register_login_tab.png  used on input line 71.
+(pdftex.def)             Requested size: 443.57848pt x 222.61731pt.
+[7 <./Figures/register_login_tab.png>]
+<Figures/dashboard_tab.png, id=329, 1061.46562pt x 587.19376pt>
+File: Figures/dashboard_tab.png Graphic file (type png)
+<use Figures/dashboard_tab.png>
+Package pdftex.def Info: Figures/dashboard_tab.png  used on input line 86.
+(pdftex.def)             Requested size: 443.57848pt x 245.38324pt.
+ [8 <./Figures/dashboard_tab.png>]
+<Figures/farm_tab.png, id=336, 1079.53313pt x 603.75563pt>
+File: Figures/farm_tab.png Graphic file (type png)
+<use Figures/farm_tab.png>
+Package pdftex.def Info: Figures/farm_tab.png  used on input line 100.
+(pdftex.def)             Requested size: 443.57848pt x 248.08495pt.
+ [9 <./Figures/farm_tab.png>] [10]
+<Figures/hardware.png, id=347, 1074.26344pt x 552.56438pt>
+File: Figures/hardware.png Graphic file (type png)
+<use Figures/hardware.png>
+Package pdftex.def Info: Figures/hardware.png  used on input line 132.
+(pdftex.def)             Requested size: 443.57848pt x 228.16325pt.
+ [11 <./Figures/hardware.png>] [12] [13]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 2035) in paragraph at lines 197--197
+[]\OT1/cmr/m/n/12 Users can ac-cess de-tailed records of
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 197--197
+\OT1/cmr/m/n/12 Farm-Bot's op-er-a-tions, en-vi-ron-men-tal
+ []
+
+> Step: build the whole table.
+[14]
+Underfull \hbox (badness 2035) in paragraph at lines 197--197
+[]\OT1/cmr/m/n/12 Users can ac-cess de-tailed records of
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 197--197
+\OT1/cmr/m/n/12 Farm-Bot's op-er-a-tions, en-vi-ron-men-tal
+ []
+
+[15]
+Overfull \hbox (5.7647pt too wide) in paragraph at lines 211--212
+[]\OT1/cmr/bx/n/12 Interfaces to Other Ap-pli-ca-tions: \OT1/cmr/m/n/12 Farm-Bot's func-tion-al-ity is en-hanced through
+ []
+
+[16]
+Overfull \hbox (3.72662pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/12 us-ing high-level pro-gram-ming lan-guages, such as Type-Script, Ruby, Elixir, Python,
+ []
+
+[17]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 2600) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 A soft-ware re-quire-ments spec-i-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 Message Queue Teleme-try Trans-port
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 252--252
+\OT1/cmr/m/n/12 (MQTT) is a lightweight, publish-
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 252--252
+\OT1/cmr/m/n/12 pro-to-col for mes-sage queue/message
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 Geometry code (G-code) is the most
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 An ap-pli-ca-tion pro-gram-ming in-ter-face
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 The Hy-per-text Trans-fer Pro-to-col
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 252--252
+\OT1/cmr/m/n/12 dis-tributed, col-lab-o-ra-tive, hy-per-me-dia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 Hypertext Trans-fer Pro-to-col Se-cure
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 2600) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 A soft-ware re-quire-ments spec-i-fi-ca-tion
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 Message Queue Teleme-try Trans-port
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 252--252
+\OT1/cmr/m/n/12 (MQTT) is a lightweight, publish-
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 252--252
+\OT1/cmr/m/n/12 pro-to-col for mes-sage queue/message
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 Geometry code (G-code) is the most
+ []
+
+[18] [19]
+Underfull \hbox (badness 1092) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 An ap-pli-ca-tion pro-gram-ming in-ter-face
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 The Hy-per-text Trans-fer Pro-to-col
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 252--252
+\OT1/cmr/m/n/12 dis-tributed, col-lab-o-ra-tive, hy-per-me-dia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]\OT1/cmr/m/n/12 Hypertext Trans-fer Pro-to-col Se-cure
+ []
+
+) [21] (main.bbl
+Chapter 2.
+) [22
+
+
+
+]
+\openout2 = `Sections/SpecificRequirements.aux'.
+
+ (Sections/SpecificRequirements.tex
+Chapter 3.
+<Figures/external_interfaces.jpg, id=403, 747.79375pt x 905.3825pt>
+File: Figures/external_interfaces.jpg Graphic file (type jpg)
+<use Figures/external_interfaces.jpg>
+Package pdftex.def Info: Figures/external_interfaces.jpg  used on input line 13.
+(pdftex.def)             Requested size: 443.57848pt x 537.05838pt.
+[23
+
+
+] [24 <./Figures/external_interfaces.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+<Figures/use_case_diagram.jpg, id=412, 1296.845pt x 1055.945pt>
+File: Figures/use_case_diagram.jpg Graphic file (type jpg)
+<use Figures/use_case_diagram.jpg>
+Package pdftex.def Info: Figures/use_case_diagram.jpg  used on input line 26.
+(pdftex.def)             Requested size: 443.57848pt x 361.17561pt.
+[25 <./Figures/use_case_diagram.jpg>]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1418) in paragraph at lines 62--62
+[]\OT1/cmr/m/n/12 Sending lo-cal-ized data of-fers a more
+ []
+
+> Step: build the whole table.
+[26] [27]
+Underfull \hbox (badness 1418) in paragraph at lines 62--62
+[]\OT1/cmr/m/n/12 Sending lo-cal-ized data of-fers a more
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 2334) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/12 The user se-lects the "Farm" op-tion
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 2334) in paragraph at lines 94--94
+[]\OT1/cmr/m/n/12 The user se-lects the "Farm" op-tion
+ []
+
+[28] [29]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1184) in paragraph at lines 133--133
+\OT1/cmr/m/n/12 the hard-ware op-er-a-tions to au-to-mate
+ []
+
+> Step: build the whole table.
+[30] [31]
+Underfull \hbox (badness 1184) in paragraph at lines 133--133
+\OT1/cmr/m/n/12 the hard-ware op-er-a-tions to au-to-mate
+ []
+
+[32]
+<Figures/control_hardware_activity_diagram.jpg, id=447, 1567.8575pt x 1768.6075pt>
+File: Figures/control_hardware_activity_diagram.jpg Graphic file (type jpg)
+<use Figures/control_hardware_activity_diagram.jpg>
+Package pdftex.def Info: Figures/control_hardware_activity_diagram.jpg  used on input line 138.
+(pdftex.def)             Requested size: 443.57848pt x 500.3612pt.
+ [33] [34 <./Figures/control_hardware_activity_diagram.jpg>]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+ [35]
+<Figures/monitor_farm_data_sequence_diagram.jpg, id=460, 1236.62pt x 955.57pt>
+File: Figures/monitor_farm_data_sequence_diagram.jpg Graphic file (type jpg)
+<use Figures/monitor_farm_data_sequence_diagram.jpg>
+Package pdftex.def Info: Figures/monitor_farm_data_sequence_diagram.jpg  used on input line 179.
+(pdftex.def)             Requested size: 443.57848pt x 342.76556pt.
+ [36] [37 <./Figures/monitor_farm_data_sequence_diagram.jpg>]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1028) in paragraph at lines 212--212
+[]\OT1/cmr/m/n/12 This use case is es-sen-tial for sys-tem
+ []
+
+> Step: build the whole table.
+[38]
+Underfull \hbox (badness 1028) in paragraph at lines 212--212
+[]\OT1/cmr/m/n/12 This use case is es-sen-tial for sys-tem
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1496) in paragraph at lines 242--242
+[]\OT1/cmr/m/n/12 Financial data in-clud-ing costs of re-
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 1496) in paragraph at lines 242--242
+[]\OT1/cmr/m/n/12 Financial data in-clud-ing costs of re-
+ []
+
+[39]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1077) in paragraph at lines 271--271
+[]\OT1/cmr/m/n/12 Details on in-stalled hard-ware com-po-
+ []
+
+> Step: build the whole table.
+[40]
+Underfull \hbox (badness 1077) in paragraph at lines 271--271
+[]\OT1/cmr/m/n/12 Details on in-stalled hard-ware com-po-
+ []
+
+[41]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1194) in paragraph at lines 300--300
+[]\OT1/cmr/m/n/12 Historical, cur-rent, and pro-jected re-
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 300--300
+\OT1/cmr/m/n/12 us-age in-for-ma-tion, aid-ing in ef-fi-cient
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 300--300
+\OT1/cmr/m/n/12 con-tribut-ing to sus-tain-able and cost-
+ []
+
+> Step: build the whole table.
+[42]
+Underfull \hbox (badness 1194) in paragraph at lines 300--300
+[]\OT1/cmr/m/n/12 Historical, cur-rent, and pro-jected re-
+ []
+
+[43]
+Underfull \hbox (badness 1789) in paragraph at lines 300--300
+\OT1/cmr/m/n/12 us-age in-for-ma-tion, aid-ing in ef-fi-cient
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 300--300
+\OT1/cmr/m/n/12 con-tribut-ing to sus-tain-able and cost-
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1888) in paragraph at lines 329--329
+[]\OT1/cmr/m/n/12 Users ac-cess the Sys-tem In-for-ma-tion
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 1888) in paragraph at lines 329--329
+[]\OT1/cmr/m/n/12 Users ac-cess the Sys-tem In-for-ma-tion
+ []
+
+[44] [45]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 4595) in paragraph at lines 361--361
+\OT1/cmr/m/n/12 on Open-Farm.cc, en-abling them to
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 361--361
+\OT1/cmr/m/n/12 Bot by in-te-grat-ing community-driven
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 4595) in paragraph at lines 361--361
+\OT1/cmr/m/n/12 on Open-Farm.cc, en-abling them to
+ []
+
+[46] [47]
+Underfull \hbox (badness 2608) in paragraph at lines 361--361
+\OT1/cmr/m/n/12 Bot by in-te-grat-ing community-driven
+ []
+
+<Figures/store_farm_data_state_diagram.jpg, id=511, 906.38625pt x 770.88pt>
+File: Figures/store_farm_data_state_diagram.jpg Graphic file (type jpg)
+<use Figures/store_farm_data_state_diagram.jpg>
+Package pdftex.def Info: Figures/store_farm_data_state_diagram.jpg  used on input line 366.
+(pdftex.def)             Requested size: 443.57848pt x 377.264pt.
+[48 <./Figures/store_farm_data_state_diagram.jpg>]
+<Figures/logical_database_diagram.jpg, id=516, 984.67876pt x 1015.795pt>
+File: Figures/logical_database_diagram.jpg Graphic file (type jpg)
+<use Figures/logical_database_diagram.jpg>
+Package pdftex.def Info: Figures/logical_database_diagram.jpg  used on input line 376.
+(pdftex.def)             Requested size: 443.57848pt x 457.59952pt.
+ [49 <./Figures/logical_database_diagram.jpg>] [50]
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
+
+ []
+
+[51]) [52]
+\openout2 = `Sections/Suggestions.aux'.
+
+ (Sections/Suggestions.tex
+Chapter 4.
+<Figures/context_diagram_improved.jpg, id=534, 1517.67pt x 845.1575pt>
+File: Figures/context_diagram_improved.jpg Graphic file (type jpg)
+<use Figures/context_diagram_improved.jpg>
+Package pdftex.def Info: Figures/context_diagram_improved.jpg  used on input line 9.
+(pdftex.def)             Requested size: 443.57848pt x 247.01091pt.
+[53
+
+
+
+
+]
+<Figures/external_interfaces_improved.jpg, id=539, 1139.25626pt x 1063.975pt>
+File: Figures/external_interfaces_improved.jpg Graphic file (type jpg)
+<use Figures/external_interfaces_improved.jpg>
+Package pdftex.def Info: Figures/external_interfaces_improved.jpg  used on input line 26.
+(pdftex.def)             Requested size: 443.57848pt x 414.26672pt.
+ [54 <./Figures/context_diagram_improved.jpg>] [55 <./Figures/external_interfaces_improved.jpg>]
+<Figures/use_case_diagram_improved.jpg, id=549, 1355.0625pt x 1055.945pt>
+File: Figures/use_case_diagram_improved.jpg Graphic file (type jpg)
+<use Figures/use_case_diagram_improved.jpg>
+Package pdftex.def Info: Figures/use_case_diagram_improved.jpg  used on input line 39.
+(pdftex.def)             Requested size: 443.57848pt x 345.65936pt.
+ [56 <./Figures/use_case_diagram_improved.jpg>]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+ [57] [58]
+<Figures/download_farm_layout_activity_diagram.jpg, id=562, 865.2325pt x 1126.2075pt>
+File: Figures/download_farm_layout_activity_diagram.jpg Graphic file (type jpg)
+<use Figures/download_farm_layout_activity_diagram.jpg>
+Package pdftex.def Info: Figures/download_farm_layout_activity_diagram.jpg  used on input line 80.
+(pdftex.def)             Requested size: 443.57848pt x 577.36552pt.
+ [59] [60 <./Figures/download_farm_layout_activity_diagram.jpg>]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1320) in paragraph at lines 115--115
+\OT1/cmr/m/n/12 and dis-cuss var-i-ous top-ics re-lated to
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 1320) in paragraph at lines 115--115
+\OT1/cmr/m/n/12 and dis-cuss var-i-ous top-ics re-lated to
+ []
+
+[61]
+<Figures/share_post_state_diagram.jpg, id=576, 806.01125pt x 880.28876pt>
+File: Figures/share_post_state_diagram.jpg Graphic file (type jpg)
+<use Figures/share_post_state_diagram.jpg>
+Package pdftex.def Info: Figures/share_post_state_diagram.jpg  used on input line 120.
+(pdftex.def)             Requested size: 443.57848pt x 484.45583pt.
+ [62] [63 <./Figures/share_post_state_diagram.jpg>]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+ [64] [65]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+
+Underfull \hbox (badness 1242) in paragraph at lines 188--188
+\OT1/cmr/m/n/12 the user re-ceives con-fir-ma-tion of the
+ []
+
+> Step: build the whole table.
+
+Underfull \hbox (badness 1242) in paragraph at lines 188--188
+\OT1/cmr/m/n/12 the user re-ceives con-fir-ma-tion of the
+ []
+
+[66] [67]
+<Figures/schedule_watering_sequence_diagram.jpg, id=602, 945.5325pt x 945.5325pt>
+File: Figures/schedule_watering_sequence_diagram.jpg Graphic file (type jpg)
+<use Figures/schedule_watering_sequence_diagram.jpg>
+Package pdftex.def Info: Figures/schedule_watering_sequence_diagram.jpg  used on input line 193.
+(pdftex.def)             Requested size: 443.57848pt x 443.59239pt.
+ [68] [69 <./Figures/schedule_watering_sequence_diagram.jpg>]
+<Figures/improved_logical_database_diagram.jpg, id=611, 1438.37375pt x 1236.62pt>
+File: Figures/improved_logical_database_diagram.jpg Graphic file (type jpg)
+<use Figures/improved_logical_database_diagram.jpg>
+Package pdftex.def Info: Figures/improved_logical_database_diagram.jpg  used on input line 203.
+(pdftex.def)             Requested size: 443.57848pt x 381.3481pt.
+ [70 <./Figures/improved_logical_database_diagram.jpg>] [71] [72]) [73] (main.aux (Sections/TitlePage.aux) (Sections/Revision.aux) (Sections/Introduction.aux) (Sections/SpecificRequirements.aux) (Sections/Suggestions.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 47421B2C0188807242F39CCCEF2DDC2C;5176.
+ ) 
+Here is how much of TeX's memory you used:
+ 14532 strings out of 474423
+ 264274 string characters out of 5741718
+ 1960496 words of memory out of 5000000
+ 36494 multiletter control sequences out of 15000+600000
+ 586492 words of font info for 107 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,11n,115p,1412b,1176s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\batuh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/batuh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/batuh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/batuh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/batuh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/batuh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/batuh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (79 pages, 7838766 bytes).
+PDF statistics:
+ 696 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 373 words of extra memory for PDF output out of 10000 (max. 10000000)
+

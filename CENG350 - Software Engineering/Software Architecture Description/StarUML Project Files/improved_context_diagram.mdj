@@ -1,0 +1,505 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLTextBoxView",
+							"_id": "AAAAAAGOW+oKz17fsng=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 496,
+							"top": 336,
+							"width": 192,
+							"height": 96,
+							"text": "FarmBot",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLTextBoxView",
+							"_id": "AAAAAAGOW+qKV17s/M8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 496,
+							"top": 96,
+							"width": 192,
+							"height": 96,
+							"text": "User",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLTextBoxView",
+							"_id": "AAAAAAGOW+qh117xd6U=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 96,
+							"top": 368,
+							"width": 192,
+							"height": 96,
+							"text": "OpenFarm.cc API",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLTextBoxView",
+							"_id": "AAAAAAGOW+qo6V72uxU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 304,
+							"top": 624,
+							"width": 192,
+							"height": 96,
+							"text": "Farm",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLTextBoxView",
+							"_id": "AAAAAAGOW+rRp1770U8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 896,
+							"top": 368,
+							"width": 192,
+							"height": 96,
+							"text": "GitHub",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLTextBoxView",
+							"_id": "AAAAAAGOW+rTPF7/Bzk=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 688,
+							"top": 624,
+							"width": 192,
+							"height": 96,
+							"text": "System Admin",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGOW+/UN19c+m0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"points": "800:624;800:480;656:480;656:432",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGOW/Ah9l9i/LE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"points": "624:432;624:496;768:496;768:624",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGOW/Ehg19umpE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "256:496;256:496"
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGOW/ErtV9xvV8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"points": "528:432;528:480;384:480;384:624",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGOW/Fi9l94wA4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"points": "416:624;416:496;560:496;560:432",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/Z8JV+b2qg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 504,
+							"top": 240,
+							"width": 80,
+							"height": 40,
+							"text": "Send user credentials"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/bWFV+mlCY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 608,
+							"top": 240,
+							"width": 120,
+							"height": 40,
+							"text": "Visualize farm\nMonitor farm data"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/l53V+1uUY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 704,
+							"top": 416,
+							"width": 176,
+							"height": 40,
+							"text": "Upload source code files\nAdd new features",
+							"horzAlign": 2
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/4PO1/Mz48=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 696,
+							"top": 336,
+							"width": 200,
+							"height": 53,
+							"text": "Review source code files\nClone the repository on local machine",
+							"horzAlign": 2
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/7ONl/Vqjw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 800,
+							"top": 544,
+							"width": 152,
+							"height": 40,
+							"text": "Update settings"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/8KbF/bJzw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 688,
+							"top": 544,
+							"width": 160,
+							"height": 40,
+							"text": "Monitor logs"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW/9lz1/kHxU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 304,
+							"top": 544,
+							"width": 192,
+							"height": 48,
+							"text": "Utilize tools"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOW//cuV/sj7s=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 416,
+							"top": 544,
+							"width": 168,
+							"height": 56,
+							"text": "Collect data"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOXAB991/ylHs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 336,
+							"top": 416,
+							"width": 128,
+							"height": 32,
+							"text": "Retrieve crop data"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGOXAKVFV/5Fms=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 336,
+							"top": 360,
+							"width": 112,
+							"height": 25,
+							"text": "Upload crop data"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGPZ0GBKdFND0M=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#FFFF00",
+							"font": "Arial;13;0",
+							"left": 144,
+							"top": 96,
+							"width": 192,
+							"height": 96
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGPZ0PO2dGttIs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;22;0",
+							"left": 144,
+							"top": 96,
+							"width": 192,
+							"height": 96,
+							"text": "ForumBot",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGPZ0VMJtHLZYs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#FFFF00",
+							"font": "Arial;13;0",
+							"left": 848,
+							"top": 96,
+							"width": 192,
+							"height": 96
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGPZ0Wgs9HSeIE=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"fillColor": "#FFFFFF",
+							"font": "Arial;22;0",
+							"left": 848,
+							"top": 96,
+							"width": 192,
+							"height": 96,
+							"text": "OpenWeather API",
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ0dXcdHn13w=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "512:336;512:320;224:320;224:192",
+							"tailEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ0gPnNH0aGc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "576:192;576:335",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ0hq59H+LUs=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "608:336;608:192",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGPZ0m+J9IWYNg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 144,
+							"top": 240,
+							"width": 80,
+							"height": 51,
+							"text": "Download farm layout"
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ0othdIeBW4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "544:336;544:304;256:304;256:192",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGPZ0vi3dI21dU=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 264,
+							"top": 232,
+							"width": 128,
+							"height": 55,
+							"text": "Upload farm layout\nShare post\nComment on post"
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ01RPdJHF6g=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "288:416;495:416",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ02FDdJOWI4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "496:384;288:386",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ04pmNJd8Jg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "688:416;896:417",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ05vDNJmNfY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "896:384;688:383",
+							"headEndStyle": 1
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ0+a9NJ4Hyg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "848:312;848:312"
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGPZ0/RGtJ+G90=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "656:336;656:304;944:304;944:192",
+							"tailEndStyle": 1
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGPZ1ECwtKOqTw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 944,
+							"top": 240,
+							"width": 144,
+							"height": 51,
+							"text": "Retrieve future weather forecast data"
+						}
+					]
+				}
+			]
+		}
+	]
+}
