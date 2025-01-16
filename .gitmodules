@@ -1,0 +1,6 @@
+[submodule "CENG435 - Data Communications and Networking/PA1/CENG435-Programming-Assignment"]
+	path = CENG435 - Data Communications and Networking/PA1/CENG435-Programming-Assignment
+	url = https://github.com/ahmet-ertas/CENG435-Programming-Assignment
+[submodule "CENG435 - Data Communications and Networking/PA2/covertovert"]
+	path = CENG435 - Data Communications and Networking/PA2/covertovert
+	url = https://github.com/B-Akcan/covertovert
