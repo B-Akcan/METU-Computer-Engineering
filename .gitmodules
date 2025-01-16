@@ -4,3 +4,12 @@
 [submodule "CENG435 - Data Communications and Networking/PA2/covertovert"]
 	path = CENG435 - Data Communications and Networking/PA2/covertovert
 	url = https://github.com/B-Akcan/covertovert
+[submodule "CENG477 - Intro. to Computer Graphics/CENG477-HW1"]
+	path = CENG477 - Intro. to Computer Graphics/CENG477-HW1
+	url = https://github.com/B-Akcan/CENG477-HW1
+[submodule "CENG477 - Intro. to Computer Graphics/CENG477-HW2"]
+	path = CENG477 - Intro. to Computer Graphics/CENG477-HW2
+	url = https://github.com/B-Akcan/CENG477-HW2
+[submodule "CENG477 - Intro. to Computer Graphics/CENG477-HW3"]
+	path = CENG477 - Intro. to Computer Graphics/CENG477-HW3
+	url = https://github.com/B-Akcan/CENG477-HW3
