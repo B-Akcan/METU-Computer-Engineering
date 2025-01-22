@@ -13,3 +13,6 @@
 [submodule "CENG477 - Intro. to Computer Graphics/CENG477-HW3"]
 	path = CENG477 - Intro. to Computer Graphics/CENG477-HW3
 	url = https://github.com/B-Akcan/CENG477-HW3
+[submodule "CENG445 - Software Development with Scripting Languages/term project/CENG445-Term-Project"]
+	path = CENG445 - Software Development with Scripting Languages/term project/CENG445-Term-Project
+	url = https://github.com/B-Akcan/CENG445-Term-Project
