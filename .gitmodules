@@ -16,3 +16,15 @@
 [submodule "CENG445 - Software Development with Scripting Languages/term project/CENG445-Term-Project"]
 	path = CENG445 - Software Development with Scripting Languages/term project/CENG445-Term-Project
 	url = https://github.com/B-Akcan/CENG445-Term-Project
+[submodule "CENG444 - Language Processors/CENG444-PROJECT1"]
+	path = CENG444 - Language Processors/CENG444-PROJECT1
+	url = https://github.com/B-Akcan/CENG444-PROJECT1
+[submodule "CENG444 - Language Processors/CENG444-PROJECT2"]
+	path = CENG444 - Language Processors/CENG444-PROJECT2
+	url = https://github.com/B-Akcan/CENG444-PROJECT2
+[submodule "CENG444 - Language Processors/CENG444-PROJECT3"]
+	path = CENG444 - Language Processors/CENG444-PROJECT3
+	url = https://github.com/B-Akcan/CENG444-PROJECT3
+[submodule "CENG444 - Language Processors/CENG444-PROJECT4"]
+	path = CENG444 - Language Processors/CENG444-PROJECT4
+	url = https://github.com/B-Akcan/CENG444-PROJECT4
