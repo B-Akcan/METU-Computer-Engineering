@@ -34,3 +34,6 @@
 [submodule "CENG495 - Cloud Computing/CENG495-HW3"]
 	path = CENG495 - Cloud Computing/CENG495-HW3
 	url = https://github.com/B-Akcan/CENG495-HW3
+[submodule "CENG453 - Software Construction/Multiplayer-Uno-Game"]
+	path = CENG453 - Software Construction/Multiplayer-Uno-Game
+	url = https://github.com/B-Akcan/Multiplayer-Uno-Game
