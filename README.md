@@ -20,8 +20,11 @@ All homeworks and projects I have submitted during Middle East Technical Univers
 [CENG400 - Summer Practice II](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG400%20-%20Summer%20Practice%20II)\
 [CENG435 - Data Communications and Networking](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG435%20-%20Data%20Communications%20and%20Networking)\
 [CENG443 - Intro. to Object-Oriented Prog. Lang. and Systems](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG443%20-%20Intro.%20to%20Object-Oriented%20Prog.%20Lang.%20and%20Systems)\
+[CENG444 - Language Processors](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG444%20-%20Language%20Processors)\
 [CENG445 - Software Development with Scripting Languages](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG445%20-%20Software%20Development%20with%20Scripting%20Languages)\
+[CENG453 - Software Construction](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG453%20-%20Software%20Construction)\
 [CENG477 - Intro. to Computer Graphics](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG477%20-%20Intro.%20to%20Computer%20Graphics)\
+[CENG495 - Cloud Computing](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/CENG495%20-%20Cloud%20Computing)\
 [EE281 - Electric Circuits](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/EE281%20-%20Electric%20Circuits)\
 [EE381 - Systems and Control](https://github.com/B-Akcan/METU-Computer-Engineering/tree/main/EE381%20-%20Systems%20and%20Control)
 
