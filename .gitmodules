@@ -28,3 +28,9 @@
 [submodule "CENG444 - Language Processors/CENG444-PROJECT4"]
 	path = CENG444 - Language Processors/CENG444-PROJECT4
 	url = https://github.com/B-Akcan/CENG444-PROJECT4
+[submodule "CENG495 - Cloud Computing/CENG495-HW1"]
+	path = CENG495 - Cloud Computing/CENG495-HW1
+	url = https://github.com/B-Akcan/CENG495-HW1
+[submodule "CENG495 - Cloud Computing/CENG495-HW3"]
+	path = CENG495 - Cloud Computing/CENG495-HW3
+	url = https://github.com/B-Akcan/CENG495-HW3
